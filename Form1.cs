@@ -23,7 +23,7 @@ namespace SomeParser
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ChromiumWebBrowser webBrowserControl = new ChromiumWebBrowser("");
+            ChromiumWebBrowser webBrowserControl = new ChromiumWebBrowser(""); 
             webBrowserControl.Load("https://auto.ria.com/search/?category_id=1&marka_id=15&model_id=1082#category_id=1&s_yers[0]=2006&po_yers[0]=0&price_do=8000&currency=1&marka_id[0]=15&model_id[0]=1082&countpage=10&page=0&power_name=1&engineVolumeFrom=&engineVolumeTo=&raceTo=125");
 
             webBrowserControl.FrameLoadEnd += new EventHandler<FrameLoadEndEventArgs>(webBrowserControl_FrameLoadEnd);
