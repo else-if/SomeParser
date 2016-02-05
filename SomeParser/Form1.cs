@@ -43,9 +43,7 @@ namespace SomeParser
         {
             var t = m_chromeBrowser.GetSourceAsync();
             t.Wait();
-            var result = t.Result;
-
-            m_chromeBrowser
+            var result = t.Result;            
         }
     }
 }
