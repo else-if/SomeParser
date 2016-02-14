@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonDisplayDevTools = new System.Windows.Forms.Button();
             this.buttonSourceCode = new System.Windows.Forms.Button();
+            this.GetAllAds = new System.Windows.Forms.Button();
+            this.GetUsersInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,11 +67,33 @@
             this.buttonSourceCode.UseVisualStyleBackColor = true;
             this.buttonSourceCode.Click += new System.EventHandler(this.buttonSourceCode_Click);
             // 
+            // GetAllAds
+            // 
+            this.GetAllAds.Location = new System.Drawing.Point(704, 87);
+            this.GetAllAds.Name = "GetAllAds";
+            this.GetAllAds.Size = new System.Drawing.Size(109, 29);
+            this.GetAllAds.TabIndex = 3;
+            this.GetAllAds.Text = "Get all ads";
+            this.GetAllAds.UseVisualStyleBackColor = true;
+            this.GetAllAds.Click += new System.EventHandler(this.GetAllAds_Click);
+            // 
+            // GetUsersInfo
+            // 
+            this.GetUsersInfo.Location = new System.Drawing.Point(704, 129);
+            this.GetUsersInfo.Name = "GetUsersInfo";
+            this.GetUsersInfo.Size = new System.Drawing.Size(109, 33);
+            this.GetUsersInfo.TabIndex = 4;
+            this.GetUsersInfo.Text = "Get Users Info";
+            this.GetUsersInfo.UseVisualStyleBackColor = true;
+            this.GetUsersInfo.Click += new System.EventHandler(this.GetUsersInfo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(818, 395);
+            this.Controls.Add(this.GetUsersInfo);
+            this.Controls.Add(this.GetAllAds);
             this.Controls.Add(this.buttonSourceCode);
             this.Controls.Add(this.buttonDisplayDevTools);
             this.Controls.Add(this.panel1);
@@ -86,6 +110,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonDisplayDevTools;
         private System.Windows.Forms.Button buttonSourceCode;
+        private System.Windows.Forms.Button GetAllAds;
+        private System.Windows.Forms.Button GetUsersInfo;
     }
 }
 
